@@ -18,6 +18,8 @@
 		89C848D42A5885C600F89097 /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = 89C848D32A5885C600F89097 /* SwiftUIFontIcon */; };
 		89C848D62A588EA500F89097 /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C848D52A588EA500F89097 /* TransactionListViewModel.swift */; };
 		89C848D82A58A0C000F89097 /* RecentTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C848D72A58A0C000F89097 /* RecentTransactionList.swift */; };
+		89DB54FF2A5949FA0098864B /* TransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DB54FE2A5949FA0098864B /* TransactionList.swift */; };
+		89DB55022A59527C0098864B /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 89DB55012A59527C0098864B /* Collections */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,7 @@
 		89C848D02A5856BA00F89097 /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
 		89C848D52A588EA500F89097 /* TransactionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TransactionListViewModel.swift; path = ../../../../../../TransactionListViewModel.swift; sourceTree = "<group>"; };
 		89C848D72A58A0C000F89097 /* RecentTransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionList.swift; sourceTree = "<group>"; };
+		89DB54FE2A5949FA0098864B /* TransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89DB55022A59527C0098864B /* Collections in Frameworks */,
 				89C848D42A5885C600F89097 /* SwiftUIFontIcon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +72,7 @@
 				897ED6822A583A0B0050F1B1 /* Expense_TrackerApp.swift */,
 				897ED6842A583A0B0050F1B1 /* ContentView.swift */,
 				89C848D72A58A0C000F89097 /* RecentTransactionList.swift */,
+				89DB54FE2A5949FA0098864B /* TransactionList.swift */,
 				89C848CC2A58502500F89097 /* TransactionModel.swift */,
 				89C848D02A5856BA00F89097 /* TransactionRow.swift */,
 				89C848D52A588EA500F89097 /* TransactionListViewModel.swift */,
@@ -105,6 +110,7 @@
 			name = "Expense Tracker";
 			packageProductDependencies = (
 				89C848D32A5885C600F89097 /* SwiftUIFontIcon */,
+				89DB55012A59527C0098864B /* Collections */,
 			);
 			productName = "Expense Tracker";
 			productReference = 897ED67F2A583A0B0050F1B1 /* Expense Tracker.app */;
@@ -136,6 +142,7 @@
 			mainGroup = 897ED6762A583A0B0050F1B1;
 			packageReferences = (
 				89C848D22A5885C600F89097 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
+				89DB55002A59527C0098864B /* XCRemoteSwiftPackageReference "swift-collections" */,
 			);
 			productRefGroup = 897ED6802A583A0B0050F1B1 /* Products */;
 			projectDirPath = "";
@@ -164,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89C848CF2A58539F00F89097 /* PreviewData.swift in Sources */,
+				89DB54FF2A5949FA0098864B /* TransactionList.swift in Sources */,
 				89C848D82A58A0C000F89097 /* RecentTransactionList.swift in Sources */,
 				89C848CD2A58502500F89097 /* TransactionModel.swift in Sources */,
 				897ED6852A583A0B0050F1B1 /* ContentView.swift in Sources */,
@@ -381,6 +389,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		89DB55002A59527C0098864B /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -388,6 +404,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 89C848D22A5885C600F89097 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */;
 			productName = SwiftUIFontIcon;
+		};
+		89DB55012A59527C0098864B /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89DB55002A59527C0098864B /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
