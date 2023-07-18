@@ -27,8 +27,8 @@ struct ContentView: View {
                         let totalExpenses = data.last?.1 ?? 0
                         
                         CardView {
-                            VStack {
-                                ChartLabel(totalExpenses.formatted(.currency(code: "PLN")), type: .title)
+                            VStack(alignment: .leading) {
+                                ChartLabel(totalExpenses.formatted(.currency(code: "PLN")), type: .title, format: "%.02f")
                                 LineChart()
                             }
                             .background(Color.systemBackground)
