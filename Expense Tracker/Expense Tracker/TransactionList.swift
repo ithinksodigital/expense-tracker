@@ -14,6 +14,8 @@ struct TransactionList: View {
             List {
                 ForEach(Array(transactionListVM.groupTransactionByMonth()), id: \.key) { month, transactions in
                     Section {
+                        
+                        //MARK: Transaction list
                         ForEach(transactions) { transaction in
                             TransactionRow(transaction: transaction)
                         }
